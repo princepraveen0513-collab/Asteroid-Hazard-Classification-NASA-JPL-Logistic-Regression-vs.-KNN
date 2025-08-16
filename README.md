@@ -10,12 +10,12 @@ This project builds and compares two binary classifiers — **Logistic Regressio
 
 ```
 .
-├── Assignment W05_Prince (3).ipynb   # Main analysis notebook
+├── AsteroidHazardClassification.ipynb   # Main analysis notebook
 ├── dataset.csv                       # Local copy of the dataset (not committed by default)
 └── README.md                         # This file
 ```
 
-> Tip: Keep large/raw data files out of Git with a `.gitignore` or use Git LFS.
+
 
 ---
 
@@ -41,7 +41,6 @@ Given orbital and photometric features for near-earth objects, predict whether a
   - For columns with missing values (e.g., `H`, `sigma_*`), mean imputation was applied.
   - Train/test split with `random_state=42` (80/20).
 
-> **Note:** The notebook computes standardized features with `StandardScaler`, but the current modeling cells use the **unscaled** versions (`X_train`, `X_test`). Consider switching to the scaled arrays for KNN to improve performance.
 
 ---
 
@@ -124,7 +123,7 @@ Place the dataset as `./dataset.csv` relative to the notebook or update the path
 
 1. Clone the repo and set up the environment.
 2. Put `dataset.csv` in the project root (or update the path in the notebook).
-3. Open and run `Assignment W05_Prince (3).ipynb` cell-by-cell.
+3. Open and run `AsteroidHazardClassification.ipynb` cell-by-cell.
 4. Inspect the confusion matrices and metric printouts; experiment with the “Suggested Next Steps.”
 
 ---
@@ -145,11 +144,6 @@ Place the dataset as `./dataset.csv` relative to the notebook or update the path
   - [KNN](https://scikit-learn.org/stable/modules/neighbors.html#classification)
   - [Model Evaluation](https://scikit-learn.org/stable/modules/model_evaluation.html)
 
----
-
-## 🧾 License
-
-Add your preferred license (e.g., MIT) and citation instructions here.
 
 ---
 
